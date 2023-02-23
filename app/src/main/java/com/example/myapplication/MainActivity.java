@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
     // La methode calcule() permettant da calculer l'IMC d'un personne
     public double calculeBMI(){
-        double poid_valeu = Double.parseDouble(Weight.getText().toString());
-        double taille_valeu = Double.parseDouble(Height.getText().toString());
+        double Weight_value = Double.parseDouble(Weight.getText().toString());
+        double Height_value = Double.parseDouble(Height.getText().toString());
 
-        double BMI = (poid_valeu/(taille_valeu*taille_valeu));
+        double BMI = (Weight_value/(703*Height_value*Height_value));
         return  BMI ;
     }
 
